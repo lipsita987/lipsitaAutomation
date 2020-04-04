@@ -12,6 +12,7 @@ import cucumber.api.junit.Cucumber;  //always need to copy paste this import fil
 			monochrome = true,
 			strict = false,
 			dryRun =false
+			//just to test
 			
 		//	format= {"pretty","html:test-outout",}     // generate different types of reporting
 //			monochrome = true, //display the console output in a proper readable format
