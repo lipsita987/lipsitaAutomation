@@ -1,0 +1,7 @@
+ .classpath
+ .project
+ .settings/
+  **/target/
+  **/test-outout/
+/META-INF/
+/target/
