@@ -6,6 +6,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry excluding="src/main/java/|src/main/resources/|src/test/java/|src/test/resources/|resources/" kind="src" path=""/>
 	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -31,13 +32,6 @@
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="F:/Automation/jar_files/commons-lang3-3.7.jar"/>
-	<classpathentry kind="lib" path="F:/Automation/jar_files/fastjson-1.2.56.jar"/>
-	<classpathentry kind="lib" path="F:/Automation/jar_files/javadoc-1.0.0.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="file:/F:/Automation/jar_files/"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
