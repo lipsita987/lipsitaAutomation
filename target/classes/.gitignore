@@ -3,7 +3,5 @@
  .settings/
   **/target/
   **/test-outout/
-/src/
-/target/
-/test-outout/
 /META-INF/
+/target/
