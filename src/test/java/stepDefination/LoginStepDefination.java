@@ -21,14 +21,12 @@ public class LoginStepDefination {
 
 	@Given("^user is already on Login page$")
 	public void user_is_already_on_Login_Page() {
-
 		WebDriver driver = null;
 		WebDriverManager.chromedriver().version("80.0.3987.106").setup();
 		System.getProperty("webdriver.chrome.driver", "F:\\Downloads\\chromedriver801.exe");
 		driver = new ChromeDriver();
 		driver.get("https://freecrm.co.in/");
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-
 	}
 
 	@When("^Title of login page is Cogmento CRM$")
