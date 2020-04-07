@@ -15,11 +15,11 @@ import junit.framework.Assert;
 @SuppressWarnings("deprecation")
 public class LoginStepDefination {
 
-	static WebDriver driver;
+	 WebDriver driver;
 
 	@Given("^user is already on Login page$")
 	public void user_is_already_on_Login_Page() {
-		WebDriver driver = null;
+		//WebDriver driver = null;
 		WebDriverManager.chromedriver().version("80.0.3987.106").setup();
 		System.getProperty("webdriver.chrome.driver", "F:\\Downloads\\chromedriver801.exe");
 		driver = new ChromeDriver();
