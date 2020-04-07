@@ -43,35 +43,35 @@ formatter.match({
   "location": "LoginStepDefination.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 27448335400,
+  "duration": 34519701900,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.title_of_login_page_is_Cogmento_CRM()"
 });
 formatter.result({
-  "duration": 1360870600,
+  "duration": 39970700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.user_enters_username_and_password()"
 });
 formatter.result({
-  "duration": 8456330100,
+  "duration": 56365637200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 51574700,
+  "duration": 156862700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.user_is_on_HomePage()"
 });
 formatter.result({
-  "duration": 11944600,
+  "duration": 10248200,
   "status": "passed"
 });
 });
