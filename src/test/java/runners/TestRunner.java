@@ -7,14 +7,12 @@ import cucumber.api.junit.Cucumber;  //always need to copy paste this import fil
 
 @RunWith(Cucumber.class)
 	@CucumberOptions(
-			features = "F:/Automation/AutomationWorkspace/cucumber_project/src/test/java/features", //the path of the feature files
+			features = "F:/Automation/AutomationWorkspace/cucumber_project/src/test/java/features/Contact.feature", //the path of the feature files
 			glue={"stepDefination"} ,//the path of the step definition files	
 			monochrome = true,
 			strict = false,
-			dryRun =false,
-			//just to test
-			
-		format= {"pretty","html:test-output",}     // generate different types of reporting
+			dryRun =false					
+   // format= {"pretty","html:test-output","junit:junit-xml/cucumber.xml"}     // generate different types of reporting
 //			monochrome = true, //display the console output in a proper readable format
 //			strict = true, //it will check if any step is not defined in step definition file
 //			dryRun = false //to check the mapping is proper between feature file and step def file
