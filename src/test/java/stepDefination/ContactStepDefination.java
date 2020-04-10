@@ -77,8 +77,11 @@ public class ContactStepDefination {
 //		action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
 //		driver.findElement(By.xpath("//a[contains(text(),'New Contact')]")).click();
 //		
-		driver.findElement(By.xpath("//span[contains(text(),'Contacts')]")).click();	
+		driver.findElement(By.xpath("//span[contains(text(),'Contacts')]")).click();
+		String header = driver.getCurrentUrl();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		Assert.assertEquals("https://ui.freecrm.com/contacts", header);
+		
 	}
 	   
 	
@@ -86,13 +89,10 @@ public class ContactStepDefination {
 	@Then("^user enters contact details \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void user_enters_contact_details_and_and(String firstname, String lastname, String position) {
 		driver.findElement(By.xpath("//button[contains(text(),'New')]")).click();
-//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-//		driver.findElement(By.xpath("(//span[@class='item-text'])[3]")).sendKeys(firstname);
-//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-//		driver.findElement(By.xpath("//input[@name='last_name']")).sendKeys(lastname);
-//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-//		driver.findElement(By.xpath("//input[@name='position']")).sendKeys(position);	
-//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//		driver.findElement(By.xpath("//div[@class='ui label label right corner']//following-sibling::input")).sendKeys(firstname);
+//		driver.findElement(By.xpath("(//div[@class='ui label label right corner']//following-sibling::input)[2]")).sendKeys(lastname);
+//		driver.findElement(By.xpath("//*[@id='ui']/div/div[2]/div[2]/div/div[2]/form/div[10]/div[2]/div/div/input")).sendKeys(position);	
+//
 //		driver.findElement(By.xpath("//button[@class='ui linkedin button' ]")).click();
 //	    
 	}
