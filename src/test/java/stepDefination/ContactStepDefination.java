@@ -71,25 +71,23 @@ public class ContactStepDefination {
 	}
 	
 	@Then("^user moves to new contact page$")
-	public void user_moves_to_new_contact_page() {
+	public void user_moves_to_new_contact_page() throws InterruptedException {
 	//	driver.switchTo().frame("mainpanel");
 //		Actions action = new Actions(driver);
 //		action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
 //		driver.findElement(By.xpath("//a[contains(text(),'New Contact')]")).click();
 //		
 		driver.findElement(By.xpath("//span[contains(text(),'Contacts')]")).click();
-		String header = driver.getCurrentUrl();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		Assert.assertEquals("https://ui.freecrm.com/contacts", header);
+		Thread.sleep(10000);
+	
 		
 	}
 	   
-	
-
 	@Then("^user enters contact details \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void user_enters_contact_details_and_and(String firstname, String lastname, String position) {
+	public void user_enters_contact_details_and_and(String firstname, String lastname, String position) throws InterruptedException {
 		driver.findElement(By.xpath("//button[contains(text(),'New')]")).click();
-//		driver.findElement(By.xpath("//div[@class='ui label label right corner']//following-sibling::input")).sendKeys(firstname);
+		Thread.sleep(10000);
+//		driver.findElement(By.xpath("(//*[@class='ui label label right corner']//following-sibling::input)[1]")).sendKeys(firstname);
 //		driver.findElement(By.xpath("(//div[@class='ui label label right corner']//following-sibling::input)[2]")).sendKeys(lastname);
 //		driver.findElement(By.xpath("//*[@id='ui']/div/div[2]/div[2]/div/div[2]/form/div[10]/div[2]/div/div/input")).sendKeys(position);	
 //
