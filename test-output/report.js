@@ -1,179 +1,176 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("F:/Automation/AutomationWorkspace/cucumber_project/src/test/java/features/DealsMap.feature");
 formatter.feature({
   "line": 1,
-  "name": "Cogmento CRM Login feature",
+  "name": "Deal data creation",
   "description": "",
-  "id": "cogmento-crm-login-feature",
+  "id": "deal-data-creation",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "comments": [
-    {
-      "line": 3,
-      "value": "#without example keyword"
-    },
-    {
-      "line": 4,
-      "value": "#Scenario: Cogmento CRM Login Scenario"
-    },
-    {
-      "line": 6,
-      "value": "#Given user is already on Login page"
-    },
-    {
-      "line": 7,
-      "value": "#When Title of login page is Cogmento CRM"
-    },
-    {
-      "line": 8,
-      "value": "#Then User enters username and password"
-    },
-    {
-      "line": 9,
-      "value": "#Then User clicks on Login button"
-    },
-    {
-      "line": 10,
-      "value": "#Then User is on HomePage"
-    }
-  ],
-  "line": 14,
-  "name": "Cogmento CRM Login Scenario",
+formatter.scenario({
+  "line": 3,
+  "name": "Cogmento CRM Create a new deal scenario",
   "description": "",
-  "id": "cogmento-crm-login-feature;cogmento-crm-login-scenario",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "id": "deal-data-creation;cogmento-crm-create-a-new-deal-scenario",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 16,
+  "line": 5,
   "name": "user is already on Login page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 17,
+  "line": 6,
   "name": "Title of login page is Cogmento CRM",
   "keyword": "When "
 });
 formatter.step({
-  "line": 18,
-  "name": "User enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "User clicks on Login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "User is on HomePage",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 22,
-  "name": "",
-  "description": "",
-  "id": "cogmento-crm-login-feature;cogmento-crm-login-scenario;",
+  "line": 7,
+  "name": "User enters username and password",
   "rows": [
     {
       "cells": [
         "username",
         "password"
       ],
-      "line": 23,
-      "id": "cogmento-crm-login-feature;cogmento-crm-login-scenario;;1"
+      "line": 9
     },
     {
       "cells": [
         "lipsita.987@gmail.com",
         "indu123$"
       ],
-      "line": 24,
-      "id": "cogmento-crm-login-feature;cogmento-crm-login-scenario;;2"
+      "line": 10
     }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 24,
-  "name": "Cogmento CRM Login Scenario",
-  "description": "",
-  "id": "cogmento-crm-login-feature;cogmento-crm-login-scenario;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 16,
-  "name": "user is already on Login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "Title of login page is Cogmento CRM",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 18,
-  "name": "User enters \"lipsita.987@gmail.com\" and \"indu123$\"",
-  "matchedColumns": [
-    0,
-    1
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 19,
+  "line": 12,
   "name": "User clicks on Login button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 20,
+  "line": 13,
   "name": "User is on HomePage",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "LoginStepDefination.user_is_already_on_Login_Page()"
+formatter.step({
+  "line": 14,
+  "name": "user moves to new deal page",
+  "keyword": "Then "
 });
-formatter.result({
-  "duration": 18044889300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefination.title_of_login_page_is_Cogmento_CRM()"
-});
-formatter.result({
-  "duration": 261512200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
+formatter.step({
+  "line": 15,
+  "name": "user enters deal details",
+  "rows": [
     {
-      "val": "lipsita.987@gmail.com",
-      "offset": 13
+      "cells": [
+        "title",
+        "amount",
+        "probability",
+        "commission"
+      ],
+      "line": 17
     },
     {
-      "val": "indu123$",
-      "offset": 41
+      "cells": [
+        "test deal1",
+        "1000",
+        "50",
+        "20"
+      ],
+      "line": 18
+    },
+    {
+      "cells": [
+        "test deal2",
+        "2000",
+        "60",
+        "30"
+      ],
+      "line": 19
+    },
+    {
+      "cells": [
+        "test deal3",
+        "3000",
+        "70",
+        "40"
+      ],
+      "line": 20
+    },
+    {
+      "cells": [
+        "test deal4",
+        "4000",
+        "80",
+        "50"
+      ],
+      "line": 21
     }
   ],
-  "location": "LoginStepDefination.user_enters_username_and_password(String,String)"
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "DealsMapStepDefination.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 17485250200,
+  "duration": 15557040900,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefination.user_clicks_on_Login_button()"
+  "location": "DealsMapStepDefination.title_of_login_page_is_Cogmento_CRM()"
 });
 formatter.result({
-  "duration": 68838500,
+  "duration": 19398500,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefination.user_is_on_HomePage()"
+  "location": "DealsMapStepDefination.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 1200294000,
+  "duration": 5112297800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DealsMapStepDefination.user_clicks_on_Login_button()"
+});
+formatter.result({
+  "duration": 45268500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DealsMapStepDefination.user_is_on_HomePage()"
+});
+formatter.result({
+  "duration": 8982300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DealsMapStepDefination.user_moves_to_new_deal_page()"
+});
+formatter.result({
+  "duration": 9448422200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DealsMapStepDefination.user_enters_deal_details(DataTable)"
+});
+formatter.result({
+  "duration": 24072857700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DealsMapStepDefination.close_the_browser()"
+});
+formatter.result({
+  "duration": 2100713900,
   "status": "passed"
 });
 });

@@ -8,11 +8,13 @@ Then User enters "<username>" and "<password>"
 Then User clicks on Login button
 Then User is on HomePage
 Then user moves to new contact page
-Then user enters contact details "<firstname>" and "<lastname>" and "<position>"
+Then user enters contact details "<firstname>" and "<lastname>" 
 Then Close the browser
 
 Examples:
-	| username | password | firstname | lastname | position |
-	| lipsita.987@gmail.com  | indu123$ | Tom 	  | Peter    | Manager  |
+	| username | password | firstname | lastname | 
+	| lipsita.987@gmail.com  | indu123$ | Tom 	  | Peter    | 
+	| lipsita.987@gmail.com  | indu123$ | Robert 	  | Ali   | 
+	
 
 	
