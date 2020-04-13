@@ -32,7 +32,8 @@ public class DealsMapStepDefination {
 		WebDriverManager.chromedriver().version("80.0.3987.106").setup();
 		System.getProperty("webdriver.chrome.driver", "F:\\Downloads\\chromedriver801.exe");
 		driver = new ChromeDriver();
-		driver.get("https://freecrm.co.in/");		
+		driver.get("https://freecrm.co.in/");
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 	}
 
