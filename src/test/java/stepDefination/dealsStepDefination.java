@@ -30,7 +30,8 @@
 //		System.getProperty("webdriver.chrome.driver", "F:\\Downloads\\chromedriver801.exe");
 //		driver = new ChromeDriver();
 //		driver.get("https://freecrm.co.in/");		
-//		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//		driver.manage().window().maximize();
 //	}
 //
 //	@When("^Title of login page is Cogmento CRM$")
@@ -74,6 +75,7 @@
 //	
 //	@Then("^user moves to new deal page$")
 //	public void user_moves_to_new_deal_page() throws Throwable {
+//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 //		driver.findElement(By.xpath("//span[contains(text(),'Deals')]")).click(); 	
 //		driver.findElement(By.xpath("//button[contains(text(),'New')]")).click(); 	
 //		
