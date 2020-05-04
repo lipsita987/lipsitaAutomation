@@ -34,15 +34,14 @@ public class ContactStepDefination {
 
 	@When("^Title of login page is Cogmento CRM$")
 	public void title_of_login_page_is_Cogmento_CRM() {
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
 		String title = null;
 		try {
 			title = driver.getTitle();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(title);
+		//System.out.println(title);
 		Assert.assertEquals("Free CRM #1 cloud software for any business large or small", title);
 	}
 
@@ -65,7 +64,6 @@ public class ContactStepDefination {
 	@Then("^User is on HomePage$")
 	public void user_is_on_HomePage() {
 		String title = driver.getTitle();
-		System.out.println("Home page title::" + title);
 		Assert.assertEquals("Cogmento CRM", title);
 		
 	}
@@ -74,8 +72,8 @@ public class ContactStepDefination {
 	public void user_moves_to_new_contact_page() throws InterruptedException {
 		
 		driver.findElement(By.xpath("//span[contains(text(),'Contacts')]")).click();		
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Thread.sleep(5000);
+		WebDriverWait wait=new WebDriverWait(driver, 20);
+		
 	}
 	   
 	@Then("^user enters contact details \"([^\"]*)\" and \"([^\"]*)\"$")
@@ -83,12 +81,8 @@ public class ContactStepDefination {
 		driver.findElement(By.xpath("//button[contains(text(),'New')]")).click();
 		driver.findElement(By.name("first_name")).sendKeys(firstname);		
 		driver.findElement(By.name("last_name")).sendKeys(lastname);				
-		driver.findElement(By.xpath("//button[@class='ui linkedin button']")).click();
-		Thread.sleep(5000);
-		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);		
-		System.out.println("Save is clicked" );
-	   
-		
+		driver.findElement(By.xpath("//button[@class='ui linkedin button']")).click();		 
+		WebDriverWait wait=new WebDriverWait(driver, 20);
 	}
 
 	@Then("^Close the browser$")

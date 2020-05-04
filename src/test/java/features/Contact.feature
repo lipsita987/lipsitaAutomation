@@ -14,7 +14,7 @@ Then Close the browser
 Examples:
 	| username | password | firstname | lastname | 
 	| lipsita.987@gmail.com  | indu123$ | Tom 	  | Peter    | 
-	| lipsita.987@gmail.com  | indu123$ | Robert 	  | Ali   | 
+	
 	
 
 	
