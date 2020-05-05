@@ -29,8 +29,8 @@ public class ContactStepDefination {
 
 	@Given("^user is already on Login page$")
 	public void user_is_already_on_Login_Page() {		
-		WebDriverManager.chromedriver().version("80.0.3987.106").setup();
-		System.getProperty("webdriver.chrome.driver", "F:\\Downloads\\chromedriver801.exe");
+		//WebDriverManager.chromedriver().version("80.0.3987.106").setup();
+		System.getProperty("webdriver.chrome.driver", "\\Users\\soumya\\Downloads\\chromedriver801.exe");
 		driver = new ChromeDriver();
 		driver.get("https://freecrm.co.in/");			
 		driver.manage().window().maximize();
@@ -82,7 +82,8 @@ public class ContactStepDefination {
 	public void user_moves_to_new_contact_page() throws InterruptedException {
 		
 	
-			driver.findElement(By.xpath("//span[contains(text(),'Contacts')]")).click();		
+			driver.findElement(By.xpath("//span[contains(text(),'Contacts')]")).click();	
+			
 		
 	}
 	@Then("^user enters contact details \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
@@ -91,17 +92,22 @@ public class ContactStepDefination {
 		
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//button[contains(text(),'New')]"))));
-		
 		driver.findElement(By.xpath("//button[contains(text(),'New')]")).click();
 		
-	   wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@name='first_name']"))));		
-				
-		driver.findElement(By.xpath("//*[@name='first_name']")).sendKeys(firstname);		
+	  //Added this code to resolve site performance issue
+		//	
+		
+		do {
+			driver.navigate().refresh();
+			} while(driver.findElements(By.name("first_name")).isEmpty());
+		
+		driver.findElement(By.name("first_name")).sendKeys(firstname);		
 		driver.findElement(By.name("last_name")).sendKeys(lastname);
 		driver.findElement(By.name("position")).sendKeys(position);
 		driver.findElement(By.xpath("//button[@class='ui linkedin button']")).click();			
 					
-	}	
+	}
+	
 
 	@Then("^Close the browser$")
 	public void close_the_browser()  {

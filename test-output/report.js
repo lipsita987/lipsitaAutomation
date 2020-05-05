@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("F:/Automation/AutomationWorkspace/cucumber_project/src/test/java/features/Contact.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/soumya/git/lipsitaAutomation/src/test/java/features/Contact.feature");
 formatter.feature({
   "line": 1,
   "name": "Cogmento CRM Create Contacts",
@@ -92,6 +92,28 @@ formatter.examples({
       ],
       "line": 17,
       "id": "cogmento-crm-create-contacts;cogmento-crm-create-a-new-contact-scenario;;3"
+    },
+    {
+      "cells": [
+        "lipsita.987@gmail.com",
+        "indu123$",
+        "Javed",
+        "Ali",
+        "Tester"
+      ],
+      "line": 18,
+      "id": "cogmento-crm-create-contacts;cogmento-crm-create-a-new-contact-scenario;;4"
+    },
+    {
+      "cells": [
+        "lipsita.987@gmail.com",
+        "indu123$",
+        "Soumya",
+        "Dash",
+        "Admin"
+      ],
+      "line": 19,
+      "id": "cogmento-crm-create-contacts;cogmento-crm-create-a-new-contact-scenario;;5"
     }
   ],
   "keyword": "Examples"
@@ -157,14 +179,14 @@ formatter.match({
   "location": "ContactStepDefination.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 19925179200,
+  "duration": 3973147815,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.title_of_login_page_is_Cogmento_CRM()"
 });
 formatter.result({
-  "duration": 21954300,
+  "duration": 25871965,
   "status": "passed"
 });
 formatter.match({
@@ -181,28 +203,28 @@ formatter.match({
   "location": "ContactStepDefination.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 9540749400,
+  "duration": 2829049019,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 73485000,
+  "duration": 29523417,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_is_on_HomePage()"
 });
 formatter.result({
-  "duration": 8390900,
+  "duration": 3724606,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_moves_to_new_contact_page()"
 });
 formatter.result({
-  "duration": 3783138300,
+  "duration": 1604735013,
   "status": "passed"
 });
 formatter.match({
@@ -223,14 +245,14 @@ formatter.match({
   "location": "ContactStepDefination.user_enters_contact_details_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 5832470600,
+  "duration": 13811147961,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.close_the_browser()"
 });
 formatter.result({
-  "duration": 5363112500,
+  "duration": 383570663,
   "status": "passed"
 });
 formatter.scenario({
@@ -294,14 +316,14 @@ formatter.match({
   "location": "ContactStepDefination.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 16683133500,
+  "duration": 3774761146,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.title_of_login_page_is_Cogmento_CRM()"
 });
 formatter.result({
-  "duration": 174280200,
+  "duration": 43650671,
   "status": "passed"
 });
 formatter.match({
@@ -318,28 +340,28 @@ formatter.match({
   "location": "ContactStepDefination.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 10007752800,
+  "duration": 2458269992,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 68096900,
+  "duration": 24960513,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_is_on_HomePage()"
 });
 formatter.result({
-  "duration": 7203500,
+  "duration": 4071606,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_moves_to_new_contact_page()"
 });
 formatter.result({
-  "duration": 4034356500,
+  "duration": 1580740964,
   "status": "passed"
 });
 formatter.match({
@@ -360,14 +382,288 @@ formatter.match({
   "location": "ContactStepDefination.user_enters_contact_details_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 10914099000,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@name\u003d\u0027first_name\u0027]\"}\n  (Session info: chrome\u003d81.0.4044.129)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-3AEAI3T\u0027, ip: \u0027192.168.0.9\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\\Users\\DELLPC~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:58740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: f94d40b448d4020a0697320319d86566\n*** Element info: {Using\u003dxpath, value\u003d//*[@name\u003d\u0027first_name\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat stepDefination.ContactStepDefination.user_enters_contact_details_and_and(ContactStepDefination.java:97)\r\n\tat ✽.Then user enters contact details \"John\" and \"Smith\" and \"Developer\"(F:/Automation/AutomationWorkspace/cucumber_project/src/test/java/features/Contact.feature:11)\r\n",
-  "status": "failed"
+  "duration": 2960830672,
+  "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.close_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 388442125,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 18,
+  "name": "Cogmento CRM Create a new contact scenario",
+  "description": "",
+  "id": "cogmento-crm-create-contacts;cogmento-crm-create-a-new-contact-scenario;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 5,
+  "name": "user is already on Login page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "Title of login page is Cogmento CRM",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "User enters \"lipsita.987@gmail.com\" and \"indu123$\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "User clicks on Login button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 9,
+  "name": "User is on HomePage",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user moves to new contact page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "user enters contact details \"Javed\" and \"Ali\" and \"Tester\"",
+  "matchedColumns": [
+    2,
+    3,
+    4
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ContactStepDefination.user_is_already_on_Login_Page()"
+});
+formatter.result({
+  "duration": 2695897815,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactStepDefination.title_of_login_page_is_Cogmento_CRM()"
+});
+formatter.result({
+  "duration": 24479634,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "lipsita.987@gmail.com",
+      "offset": 13
+    },
+    {
+      "val": "indu123$",
+      "offset": 41
+    }
+  ],
+  "location": "ContactStepDefination.user_enters_username_and_password(String,String)"
+});
+formatter.result({
+  "duration": 2037674817,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactStepDefination.user_clicks_on_Login_button()"
+});
+formatter.result({
+  "duration": 39881898,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactStepDefination.user_is_on_HomePage()"
+});
+formatter.result({
+  "duration": 4509345,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactStepDefination.user_moves_to_new_contact_page()"
+});
+formatter.result({
+  "duration": 1915042603,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Javed",
+      "offset": 29
+    },
+    {
+      "val": "Ali",
+      "offset": 41
+    },
+    {
+      "val": "Tester",
+      "offset": 51
+    }
+  ],
+  "location": "ContactStepDefination.user_enters_contact_details_and_and(String,String,String)"
+});
+formatter.result({
+  "duration": 23802278969,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactStepDefination.close_the_browser()"
+});
+formatter.result({
+  "duration": 388077710,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 19,
+  "name": "Cogmento CRM Create a new contact scenario",
+  "description": "",
+  "id": "cogmento-crm-create-contacts;cogmento-crm-create-a-new-contact-scenario;;5",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 5,
+  "name": "user is already on Login page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "Title of login page is Cogmento CRM",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "User enters \"lipsita.987@gmail.com\" and \"indu123$\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "User clicks on Login button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 9,
+  "name": "User is on HomePage",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user moves to new contact page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "user enters contact details \"Soumya\" and \"Dash\" and \"Admin\"",
+  "matchedColumns": [
+    2,
+    3,
+    4
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ContactStepDefination.user_is_already_on_Login_Page()"
+});
+formatter.result({
+  "duration": 2583663609,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactStepDefination.title_of_login_page_is_Cogmento_CRM()"
+});
+formatter.result({
+  "duration": 17312755,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "lipsita.987@gmail.com",
+      "offset": 13
+    },
+    {
+      "val": "indu123$",
+      "offset": 41
+    }
+  ],
+  "location": "ContactStepDefination.user_enters_username_and_password(String,String)"
+});
+formatter.result({
+  "duration": 3440273715,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactStepDefination.user_clicks_on_Login_button()"
+});
+formatter.result({
+  "duration": 25560506,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactStepDefination.user_is_on_HomePage()"
+});
+formatter.result({
+  "duration": 6097113,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactStepDefination.user_moves_to_new_contact_page()"
+});
+formatter.result({
+  "duration": 1600233700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Soumya",
+      "offset": 29
+    },
+    {
+      "val": "Dash",
+      "offset": 42
+    },
+    {
+      "val": "Admin",
+      "offset": 53
+    }
+  ],
+  "location": "ContactStepDefination.user_enters_contact_details_and_and(String,String,String)"
+});
+formatter.result({
+  "duration": 12942578075,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactStepDefination.close_the_browser()"
+});
+formatter.result({
+  "duration": 359424655,
+  "status": "passed"
 });
 });
