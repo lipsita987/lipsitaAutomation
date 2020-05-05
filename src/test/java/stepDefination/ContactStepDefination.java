@@ -1,6 +1,9 @@
 package stepDefination;
 
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -9,6 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.java.en.Given;
@@ -27,21 +32,26 @@ public class ContactStepDefination {
 		WebDriverManager.chromedriver().version("80.0.3987.106").setup();
 		System.getProperty("webdriver.chrome.driver", "F:\\Downloads\\chromedriver801.exe");
 		driver = new ChromeDriver();
-		driver.get("https://freecrm.co.in/");		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get("https://freecrm.co.in/");			
 		driver.manage().window().maximize();
+		Robot r;
+		try {
+			r = new Robot();
+			r.mouseMove(0,0);
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	@When("^Title of login page is Cogmento CRM$")
-	public void title_of_login_page_is_Cogmento_CRM() {
-		
+	public void title_of_login_page_is_Cogmento_CRM() {		
 		String title = null;
 		try {
 			title = driver.getTitle();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		//System.out.println(title);
 		Assert.assertEquals("Free CRM #1 cloud software for any business large or small", title);
 	}
 
@@ -71,22 +81,35 @@ public class ContactStepDefination {
 	@Then("^user moves to new contact page$")
 	public void user_moves_to_new_contact_page() throws InterruptedException {
 		
-		driver.findElement(By.xpath("//span[contains(text(),'Contacts')]")).click();		
-		WebDriverWait wait=new WebDriverWait(driver, 20);
+	
+			driver.findElement(By.xpath("//span[contains(text(),'Contacts')]")).click();		
 		
 	}
-	   
-	@Then("^user enters contact details \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void user_enters_contact_details_and_and(String firstname, String lastname) throws InterruptedException {
+	@Then("^user enters contact details \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enters_contact_details_and_and(String firstname, String lastname, String position) {
+
+		
+		WebDriverWait wait = new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//button[contains(text(),'New')]"))));
+		
 		driver.findElement(By.xpath("//button[contains(text(),'New')]")).click();
-		driver.findElement(By.name("first_name")).sendKeys(firstname);		
-		driver.findElement(By.name("last_name")).sendKeys(lastname);				
-		driver.findElement(By.xpath("//button[@class='ui linkedin button']")).click();		 
-		WebDriverWait wait=new WebDriverWait(driver, 20);
-	}
+		
+	   wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@name='first_name']"))));		
+				
+		driver.findElement(By.xpath("//*[@name='first_name']")).sendKeys(firstname);		
+		driver.findElement(By.name("last_name")).sendKeys(lastname);
+		driver.findElement(By.name("position")).sendKeys(position);
+		driver.findElement(By.xpath("//button[@class='ui linkedin button']")).click();			
+					
+	}	
 
 	@Then("^Close the browser$")
 	public void close_the_browser()  {
+		
+        driver.findElement(By.xpath("//*[@role='listbox']")).click();
+		driver.findElement(By.xpath("//span[contains(text(),'Log Out')]")).click();
+		
+		driver.close();
 		driver.quit();	
 
 }
