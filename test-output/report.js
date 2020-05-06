@@ -168,14 +168,14 @@ formatter.match({
   "location": "ContactStepDefination.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 23649638500,
+  "duration": 27725485500,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.title_of_login_page_is_Cogmento_CRM()"
 });
 formatter.result({
-  "duration": 30466000,
+  "duration": 16715400,
   "status": "passed"
 });
 formatter.match({
@@ -192,28 +192,28 @@ formatter.match({
   "location": "ContactStepDefination.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 5865714000,
+  "duration": 7265275600,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 68935100,
+  "duration": 57432900,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_is_on_HomePage()"
 });
 formatter.result({
-  "duration": 22458400,
+  "duration": 8815500,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_moves_to_new_contact_page()"
 });
 formatter.result({
-  "duration": 4150553200,
+  "duration": 4220267600,
   "status": "passed"
 });
 formatter.match({
@@ -234,14 +234,14 @@ formatter.match({
   "location": "ContactStepDefination.user_enters_contact_details_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 21867623200,
+  "duration": 19450799900,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.close_the_browser()"
 });
 formatter.result({
-  "duration": 2432086200,
+  "duration": 2653899300,
   "status": "passed"
 });
 formatter.scenario({
@@ -305,14 +305,14 @@ formatter.match({
   "location": "ContactStepDefination.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 16846538400,
+  "duration": 15842057500,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.title_of_login_page_is_Cogmento_CRM()"
 });
 formatter.result({
-  "duration": 42415600,
+  "duration": 95739800,
   "status": "passed"
 });
 formatter.match({
@@ -329,28 +329,28 @@ formatter.match({
   "location": "ContactStepDefination.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 6590676000,
+  "duration": 5024455100,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 445831200,
+  "duration": 72678300,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_is_on_HomePage()"
 });
 formatter.result({
-  "duration": 17553800,
+  "duration": 13164500,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_moves_to_new_contact_page()"
 });
 formatter.result({
-  "duration": 4600799000,
+  "duration": 4998959900,
   "status": "passed"
 });
 formatter.match({
@@ -371,14 +371,14 @@ formatter.match({
   "location": "ContactStepDefination.user_enters_contact_details_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 19848512700,
+  "duration": 19424304700,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.close_the_browser()"
 });
 formatter.result({
-  "duration": 3098125600,
+  "duration": 4253301000,
   "status": "passed"
 });
 formatter.scenario({
@@ -442,14 +442,14 @@ formatter.match({
   "location": "ContactStepDefination.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 14111117800,
+  "duration": 16423768600,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.title_of_login_page_is_Cogmento_CRM()"
 });
 formatter.result({
-  "duration": 184018200,
+  "duration": 11548200,
   "status": "passed"
 });
 formatter.match({
@@ -466,28 +466,28 @@ formatter.match({
   "location": "ContactStepDefination.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 6260868500,
+  "duration": 4955700200,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 77411700,
+  "duration": 51506800,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_is_on_HomePage()"
 });
 formatter.result({
-  "duration": 10654400,
+  "duration": 10042600,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.user_moves_to_new_contact_page()"
 });
 formatter.result({
-  "duration": 3552323700,
+  "duration": 3105246300,
   "status": "passed"
 });
 formatter.match({
@@ -508,14 +508,14 @@ formatter.match({
   "location": "ContactStepDefination.user_enters_contact_details_and_and(String,String,String)"
 });
 formatter.result({
-  "duration": 18919555100,
+  "duration": 19927898900,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactStepDefination.close_the_browser()"
 });
 formatter.result({
-  "duration": 2345042300,
+  "duration": 3784951700,
   "status": "passed"
 });
 });

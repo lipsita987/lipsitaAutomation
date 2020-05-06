@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="155.038919">
-<testcase classname="Cogmento CRM Create Contacts" name="Cogmento CRM Create a new contact scenario" time="58.087475">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="159.394016">
+<testcase classname="Cogmento CRM Create Contacts" name="Cogmento CRM Create a new contact scenario" time="61.398692">
 <system-out><![CDATA[Given user is already on Login page.........................................passed
 When Title of login page is Cogmento CRM....................................passed
 Then User enters "lipsita.987@gmail.com" and "indu123$".....................passed
@@ -11,7 +11,7 @@ Then user enters contact details "Tom" and "Peter" and "Manager"............pass
 Then Close the browser......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Cogmento CRM Create Contacts" name="Cogmento CRM Create a new contact scenario 2" time="51.490452">
+<testcase classname="Cogmento CRM Create Contacts" name="Cogmento CRM Create a new contact scenario 2" time="49.724661">
 <system-out><![CDATA[Given user is already on Login page.........................................passed
 When Title of login page is Cogmento CRM....................................passed
 Then User enters "lipsita.987@gmail.com" and "indu123$".....................passed
@@ -22,7 +22,7 @@ Then user enters contact details "John" and "Smith" and "Developer".........pass
 Then Close the browser......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Cogmento CRM Create Contacts" name="Cogmento CRM Create a new contact scenario 3" time="45.460992">
+<testcase classname="Cogmento CRM Create Contacts" name="Cogmento CRM Create a new contact scenario 3" time="48.270663">
 <system-out><![CDATA[Given user is already on Login page.........................................passed
 When Title of login page is Cogmento CRM....................................passed
 Then User enters "lipsita.987@gmail.com" and "indu123$".....................passed
