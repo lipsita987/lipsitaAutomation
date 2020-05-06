@@ -55,7 +55,7 @@ public class ContactStepDefination {
 		Assert.assertEquals("Free CRM #1 cloud software for any business large or small", title);
 	}
 
-		@Then("^User enters \"(.*)\" and \"(.*)\"$")
+	@Then("^User enters \"(.*)\" and \"(.*)\"$")
 		public void user_enters_username_and_password(String username, String password) {
 			driver.findElement(By.xpath("//span[contains(text(),'Log In')]")).click();
 			driver.findElement(By.name("email")).sendKeys(username);
@@ -79,27 +79,32 @@ public class ContactStepDefination {
 	}
 	
 	@Then("^user moves to new contact page$")
-	public void user_moves_to_new_contact_page() throws InterruptedException {
-		
+	public void user_moves_to_new_contact_page() throws InterruptedException {	
 	
 			driver.findElement(By.xpath("//span[contains(text(),'Contacts')]")).click();		
 		
 	}
+	
+	
 	@Then("^user enters contact details \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void user_enters_contact_details_and_and(String firstname, String lastname, String position) {
 
 		
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//button[contains(text(),'New')]"))));
-		
 		driver.findElement(By.xpath("//button[contains(text(),'New')]")).click();
 		
-	   wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@name='first_name']"))));		
+	  //Added this code to resolve site performance issue
 				
-		driver.findElement(By.xpath("//*[@name='first_name']")).sendKeys(firstname);		
+		do {
+			driver.navigate().refresh();
+			} while(driver.findElements(By.name("first_name")).isEmpty());
+		
+		driver.findElement(By.name("first_name")).sendKeys(firstname);		
 		driver.findElement(By.name("last_name")).sendKeys(lastname);
 		driver.findElement(By.name("position")).sendKeys(position);
 		driver.findElement(By.xpath("//button[@class='ui linkedin button']")).click();			
+					
 					
 	}	
 

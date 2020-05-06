@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="86.437402">
-<testcase classname="Cogmento CRM Create Contacts" name="Cogmento CRM Create a new contact scenario" time="44.54848">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="155.038919">
+<testcase classname="Cogmento CRM Create Contacts" name="Cogmento CRM Create a new contact scenario" time="58.087475">
 <system-out><![CDATA[Given user is already on Login page.........................................passed
 When Title of login page is Cogmento CRM....................................passed
 Then User enters "lipsita.987@gmail.com" and "indu123$".....................passed
@@ -11,42 +11,26 @@ Then user enters contact details "Tom" and "Peter" and "Manager"............pass
 Then Close the browser......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Cogmento CRM Create Contacts" name="Cogmento CRM Create a new contact scenario 2" time="41.888922">
-<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@name='first_name']&quot;}&#10;  (Session info: chrome=81.0.4044.129)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-3AEAI3T', ip: '192.168.0.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\DELLPC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: f94d40b448d4020a0697320319d86566&#10;*** Element info: {Using=xpath, value=//*[@name='first_name']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at stepDefination.ContactStepDefination.user_enters_contact_details_and_and(ContactStepDefination.java:97)&#13;&#10;&#9;at ✽.Then user enters contact details &quot;John&quot; and &quot;Smith&quot; and &quot;Developer&quot;(F:/Automation/AutomationWorkspace/cucumber_project/src/test/java/features/Contact.feature:11)&#13;&#10;"><![CDATA[Given user is already on Login page.........................................passed
+<testcase classname="Cogmento CRM Create Contacts" name="Cogmento CRM Create a new contact scenario 2" time="51.490452">
+<system-out><![CDATA[Given user is already on Login page.........................................passed
 When Title of login page is Cogmento CRM....................................passed
 Then User enters "lipsita.987@gmail.com" and "indu123$".....................passed
 Then User clicks on Login button............................................passed
 Then User is on HomePage....................................................passed
 Then user moves to new contact page.........................................passed
-Then user enters contact details "John" and "Smith" and "Developer".........failed
-Then Close the browser......................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@name='first_name']"}
-  (Session info: chrome=81.0.4044.129)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-3AEAI3T', ip: '192.168.0.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\DELLPC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58740}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f94d40b448d4020a0697320319d86566
-*** Element info: {Using=xpath, value=//*[@name='first_name']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefination.ContactStepDefination.user_enters_contact_details_and_and(ContactStepDefination.java:97)
-	at ✽.Then user enters contact details "John" and "Smith" and "Developer"(F:/Automation/AutomationWorkspace/cucumber_project/src/test/java/features/Contact.feature:11)
-]]></failure>
+Then user enters contact details "John" and "Smith" and "Developer".........passed
+Then Close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Cogmento CRM Create Contacts" name="Cogmento CRM Create a new contact scenario 3" time="45.460992">
+<system-out><![CDATA[Given user is already on Login page.........................................passed
+When Title of login page is Cogmento CRM....................................passed
+Then User enters "lipsita.987@gmail.com" and "indu123$".....................passed
+Then User clicks on Login button............................................passed
+Then User is on HomePage....................................................passed
+Then user moves to new contact page.........................................passed
+Then user enters contact details "Javed" and "Ali" and "Tester".............passed
+Then Close the browser......................................................passed
+]]></system-out>
 </testcase>
 </testsuite>
